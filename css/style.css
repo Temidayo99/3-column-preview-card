@@ -15,12 +15,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .card-container{
     display: inline-flex;
-    margin: 0rem 17rem;
+    margin: 0rem 15rem;
 }
 .card{
     padding: 30px 40px;
@@ -43,34 +43,57 @@ body{
     font-size: 0.875rem;
 }
 
-.card button{
-    border-radius: 20px;
-    padding: 10px 30px;
-    border: none;
-    background: hsl(0, 0%, 95%);
-    font-size: 0.813rem;
-}
-
-
 #first-card{
     background: hsl(31, 77%, 52%);
     border-radius: 10px 0px 0px 10px;
 }
-#first-card button{
-    color: hsl(31, 77%, 52%);
-}
 #middle-card{
     background: hsl(184, 100%, 22%);
-}
-#middle-card button{
-    color: hsl(184, 100%, 22%);
 }
 #last-card{
     background: hsl(179, 100%, 13%);
     border-radius: 0px 10px 10px 0px;
 }
+
+
+.card button{
+    border-radius: 20px;
+    padding: 10px 30px;
+    background: hsl(0, 0%, 95%);
+    font-size: 0.813rem;
+}
+.card button:hover{
+    cursor: pointer;
+}
+
+#first-card button{
+    color: hsl(31, 77%, 52%);
+    border: 0px solid hsl(31, 77%, 52%);
+}
+#first-card button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+#middle-card button{
+    color: hsl(184, 100%, 22%);
+    border: 0px solid hsl(184, 100%, 22%);
+}
+#middle-card button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
 #last-card button{
     color: hsl(179, 100%, 13%);
+    border: hsl(179, 100%, 13%);
+}
+#last-card button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 
